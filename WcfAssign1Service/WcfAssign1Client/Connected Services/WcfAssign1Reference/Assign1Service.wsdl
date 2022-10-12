@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Assign1Service" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:63630/Assign1Service.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:63630/Assign1Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAssign1Service_IsPrimeNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsPrimeNumber" />
+  </wsdl:message>
+  <wsdl:message name="IAssign1Service_IsPrimeNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsPrimeNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAssign1Service_SumOfDigits_InputMessage">
+    <wsdl:part name="parameters" element="tns:SumOfDigits" />
+  </wsdl:message>
+  <wsdl:message name="IAssign1Service_SumOfDigits_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SumOfDigitsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAssign1Service_ReverseString_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReverseString" />
+  </wsdl:message>
+  <wsdl:message name="IAssign1Service_ReverseString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReverseStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAssign1Service_PrintHTMLTags_InputMessage">
+    <wsdl:part name="parameters" element="tns:PrintHTMLTags" />
+  </wsdl:message>
+  <wsdl:message name="IAssign1Service_PrintHTMLTags_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PrintHTMLTagsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAssign1Service_Sort5Numbers_InputMessage">
+    <wsdl:part name="parameters" element="tns:Sort5Numbers" />
+  </wsdl:message>
+  <wsdl:message name="IAssign1Service_Sort5Numbers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Sort5NumbersResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAssign1Service">
+    <wsdl:operation name="IsPrimeNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAssign1Service/IsPrimeNumber" message="tns:IAssign1Service_IsPrimeNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAssign1Service/IsPrimeNumberResponse" message="tns:IAssign1Service_IsPrimeNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SumOfDigits">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAssign1Service/SumOfDigits" message="tns:IAssign1Service_SumOfDigits_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAssign1Service/SumOfDigitsResponse" message="tns:IAssign1Service_SumOfDigits_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReverseString">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAssign1Service/ReverseString" message="tns:IAssign1Service_ReverseString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAssign1Service/ReverseStringResponse" message="tns:IAssign1Service_ReverseString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PrintHTMLTags">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAssign1Service/PrintHTMLTags" message="tns:IAssign1Service_PrintHTMLTags_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAssign1Service/PrintHTMLTagsResponse" message="tns:IAssign1Service_PrintHTMLTags_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Sort5Numbers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAssign1Service/Sort5Numbers" message="tns:IAssign1Service_Sort5Numbers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAssign1Service/Sort5NumbersResponse" message="tns:IAssign1Service_Sort5Numbers_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAssign1Service" type="tns:IAssign1Service">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IsPrimeNumber">
+      <soap:operation soapAction="http://tempuri.org/IAssign1Service/IsPrimeNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SumOfDigits">
+      <soap:operation soapAction="http://tempuri.org/IAssign1Service/SumOfDigits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReverseString">
+      <soap:operation soapAction="http://tempuri.org/IAssign1Service/ReverseString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintHTMLTags">
+      <soap:operation soapAction="http://tempuri.org/IAssign1Service/PrintHTMLTags" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sort5Numbers">
+      <soap:operation soapAction="http://tempuri.org/IAssign1Service/Sort5Numbers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Assign1Service">
+    <wsdl:port name="BasicHttpBinding_IAssign1Service" binding="tns:BasicHttpBinding_IAssign1Service">
+      <soap:address location="http://localhost:63630/Assign1Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,6 @@
+C:\Users\trevs\source\repos\wcf-assignment1\WcfAssign1Service\WcfAssign1Service\bin\WcfAssign1Service.dll.config
+C:\Users\trevs\source\repos\wcf-assignment1\WcfAssign1Service\WcfAssign1Service\bin\WcfAssign1Service.dll
+C:\Users\trevs\source\repos\wcf-assignment1\WcfAssign1Service\WcfAssign1Service\bin\WcfAssign1Service.pdb
+C:\Users\trevs\source\repos\wcf-assignment1\WcfAssign1Service\WcfAssign1Service\obj\Debug\WcfAssign1Service.csproj.CoreCompileInputs.cache
+C:\Users\trevs\source\repos\wcf-assignment1\WcfAssign1Service\WcfAssign1Service\obj\Debug\WcfAssign1Service.dll
+C:\Users\trevs\source\repos\wcf-assignment1\WcfAssign1Service\WcfAssign1Service\obj\Debug\WcfAssign1Service.pdb
