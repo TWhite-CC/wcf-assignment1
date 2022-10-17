@@ -1,4 +1,7 @@
-﻿using System;
+﻿/* PROG3170-2 WCF-Assignment#1
+ */
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
